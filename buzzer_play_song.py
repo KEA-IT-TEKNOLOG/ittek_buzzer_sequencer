@@ -17,8 +17,12 @@ the end and "Online Sequencer:120233:" from the start
 
 from machine import Pin
 
-#One buzzer on pin 26
-mySong = music(song, pins=[Pin(26)], tempo=3)
+#HUSK AT FORBINDE MED DUPONT KABEL:
+# JP6 GP6
+# JP1 SCK
+
+#One buzzer on pin 14
+mySong = music(song, pins=[Pin(14)], tempo=3)
 
 #Four buzzers
 #mySong = music(song, pins=[Pin(0),Pin(1),Pin(2),Pin(3)])
